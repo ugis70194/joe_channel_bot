@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 from requests_oauthlib import OAuth1Session
 from func import *
 
@@ -26,6 +27,7 @@ if __name__ == '__main__':
     tweet = "じょえチャンネルの現在のチャンネル登録者数は"
     tweet += str(GetSubscriberCount(statistics))
     tweet += "人です笑"
+    tweet += " (" + str(datetime.now()) + ")"
 
     res = twitter.post(TWEET_ENDPOINT, params={"status" : tweet})
 
