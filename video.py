@@ -27,7 +27,7 @@ if __name__ == '__main__':
         save_file = json.load(f)
         if save_file["last_upload"] != str(uploads[0]["title"]):
             save_file["last_upload"] = str(uploads[0]["title"])
-            tweet = "じょえちゃんねるに動画がアップロードされました！\n"
+            tweet = "じょえチャンネルに動画がアップロードされました！\n"
             tweet += str(uploads[0]["title"]) + "\n"
             tweet += "https://www.youtube.com/watch?v=" + str(uploads[0]["Id"])
     
