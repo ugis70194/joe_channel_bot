@@ -1,1 +1,2 @@
-web: python main.py
+bot1: python main.py
+bot2: python video.py
