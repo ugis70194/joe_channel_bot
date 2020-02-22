@@ -18,7 +18,7 @@ if __name__ == '__main__':
                                                ACCESS_TOKEN,
                                                ACCESS_TOKEN_SECRET)
 
-    statistics = YoutubeChannelDetails(CHANNEL_ID, API_KEY)
+    statistics = GetYoutubeChannelStatistics(CHANNEL_ID, API_KEY)
 
     tweet = "じょえチャンネルの現在のチャンネル登録者数は"
     tweet += str(GetSubscriberCount(statistics))
